@@ -2,4 +2,8 @@
     <string name="app_name">MEDISOFT</string>
     <string name="result">Voici le nombre généré :</string>
     <string name="title">Medisoft , l\'appli qui génère des nombre aléatoire entre 0 et 99</string>
+    <string name="textButton">Générer</string>
+    <string name="button01">Pile/Face</string>
+    <string name="de">Lancement d\'un dé : 1 à 6</string>
+    <string name="loto">Tirage du loto 1 à 49</string>
 </resources>
