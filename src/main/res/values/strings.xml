@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MEDISOFT</string>
+    <string name="result">Voici le nombre généré :</string>
+    <string name="title">Medisoft , l\'appli qui génère des nombre aléatoire entre 0 et 99</string>
+</resources>
