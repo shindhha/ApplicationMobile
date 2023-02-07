@@ -7,45 +7,77 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
+    android:stretchColumns="1,2"
     app:flow_horizontalGap="100px">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="#FF0000"
-        android:textSize="15sp"
-        android:textFontWeight="150"
-        android:text="@string/title"
-        />
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2dip"
-        android:layout_marginTop="15dip"
-        android:layout_marginBottom="15dip"
-        android:background="#0000FF" />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="150px"
-        android:text="@string/button01"
-        android:onClick="pileFace"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="150px"
-        android:text="@string/de"
-        android:onClick="LancerDe"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="150px"
-        android:text="@string/loto"
-        android:onClick="Loto"/>
+    <TableRow>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="@string/prix" />
+        <EditText
+            android:id="@+id/prix"
+            android:text="@string/ePrix"
+            android:layout_span="2"
+            ></EditText>
+
+    </TableRow>
+
+
+
+    <TableRow>
 
     <TextView
-        android:id="@+id/result"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-        android:textColor="#FF0000"
-        android:textSize="15sp"
-        android:textFontWeight="150"
-      android:text="@string/result"
-      />
+
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:text="@string/reducton"
+        />
+        <EditText
+            android:id="@+id/reduction"
+            android:text="@string/eReduction"
+            android:layout_span="2"
+            ></EditText>
+    </TableRow>
+
+
+    <TableRow>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:text="@string/economie"
+        />
+        <EditText
+            android:id="@+id/ecnomie"
+            android:text="@string/resultat"
+            android:layout_span="2"
+            ></EditText>
+    </TableRow>
+
+
+
+    <TableRow>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:text="@string/payer"
+        />
+        <EditText
+            android:id="@+id/aPayer"
+            android:layout_span="2"></EditText>
+    </TableRow>
+
+
+    <TableRow>
+        <Button android:text="@string/btncalcul"
+            android:layout_column="1"
+            android:onClick="calcul"/>
+        <Button android:text="@string/btnannuler"
+            android:onClick="clear"/>
+    </TableRow>
+
+
+
 
   </TableLayout>

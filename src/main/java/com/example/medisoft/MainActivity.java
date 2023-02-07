@@ -18,14 +18,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        resultat = findViewById(R.id.result);
-        text = getString(R.string.result);
 
 
-    }
-
-
-    public void generNbAleatoire(View view) {
 
     }
 
@@ -34,18 +28,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
     }
 
-    public void pileFace(View view) {
-        String nbAleatoire = OutilAleatoire.tiragePileFace();
-        resultat.setText(text + nbAleatoire);
+    public void clear(View view) {
     }
 
-    public void LancerDe(View view) {
-        int nbAleatoire = OutilAleatoire.tirageAleatoire(6);
-        resultat.setText(text + (nbAleatoire+1));
-    }
+    public void calcul(View view) {
 
-    public void Loto(View view) {
-        int nbAleatoire = OutilAleatoire.tirageAleatoire(49);
-        resultat.setText(text + (nbAleatoire+1) );
     }
 }
