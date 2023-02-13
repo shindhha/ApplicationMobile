@@ -2,6 +2,7 @@
     <string name="title">Envie de changer d\'air ?
     Estimation coût d\'un week-end
     Prolongé ou pas !</string>
+    <string name="app_name"></string>
     <string name="nbj">Nombre de jours :</string>
     <string name="bt">Budget transport :</string>
     <string name="bn">Budget par nuit :</string>

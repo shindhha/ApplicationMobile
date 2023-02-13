@@ -7,55 +7,92 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
-    android:stretchColumns="1,2"
+    android:stretchColumns="1"
     app:flow_horizontalGap="100px">
 
 
     <!-- Titre -->
     <TextView
+        android:textAlignment="center"
         android:text="@string/title"
         android:textColor="@android:color/holo_blue_bright"
         ></TextView>
     <!-- Image avion -->
     <!-- Radio button nbjours -->
+    <TextView
+        android:text="@string/nbj"></TextView>
+    <RadioGroup
+        android:orientation="horizontal"
+        android:gravity="center">
+        <RadioButton
+            android:text="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></RadioButton>
+        <RadioButton
+            android:text="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></RadioButton>
+
+        <RadioButton
+            android:text="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></RadioButton>
+
+        <RadioButton
+            android:text="4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></RadioButton>
+    </RadioGroup>
     <!-- Budget transport -->
+    <TableRow>
+        <TextView
+            android:text="@string/bt"></TextView>
+        <EditText
+            android:layout_column="2"></EditText>
+    </TableRow>
     <!-- Budget par nuit -->
     <TableRow>
         <TextView
             android:text="@string/bn"></TextView>
-        <EditText></EditText>
+        <EditText
+            android:layout_column="2"></EditText>
     </TableRow>
     <!-- Budget par repas -->
     <TableRow>
         <TextView
             android:text="@string/br"></TextView>
-        <EditText></EditText>
+        <EditText
+            android:layout_column="2"></EditText>
     </TableRow>
     <!-- Check box 2ème repas -->
+
     <TableRow>
-        <CheckBox></CheckBox>
-        <TextView
-            android:text="@string/repas2"></TextView>
+        <CheckBox
+            android:layout_span="3"
+            android:layout_gravity="center"
+            android:text="@string/repas2"></CheckBox>
     </TableRow>
+
     <!-- Budget visite -->
     <TableRow>
         <TextView
             android:text="@string/bv"></TextView>
-        <EditText></EditText>
+        <EditText
+            android:layout_column="2"></EditText>
     </TableRow>
     <!-- Estimation du coût -->
     <TableRow>
         <TextView
             android:text="@string/ec"></TextView>
-        <EditText></EditText>
+        <EditText
+            android:layout_column="2"></EditText>
     </TableRow>
     <!-- Button -->
     <TableRow>
+        <TextView></TextView>
         <Button
-            android:layout_column="1"
             android:text="@string/btnCalculer"></Button>
         <Button
-            android:layout_column="1"
             android:text="@string/btnAnnuler"></Button>
     </TableRow>
 
