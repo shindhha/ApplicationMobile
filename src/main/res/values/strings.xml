@@ -1,12 +1,14 @@
 <resources>
-    <string name="app_name">MEDISOFT</string>
-    <string name="prix">Prix initial :</string>
-    <string name="reducton">Taux de réduction :</string>
-    <string name="economie">Economie réalisée :</string>
-    <string name="payer">A payer : </string>
-    <string name="btncalcul">Calculer</string>
-    <string name="btnannuler">Annuler</string>
-    <string name="ePrix">prix avec les centimes</string>
-    <string name="eReduction">% réduction (de 0 à 100)</string>
-    <string name="resultat">Résultat calculé</string>
+    <string name="title">Envie de changer d\'air ?
+    Estimation coût d\'un week-end
+    Prolongé ou pas !</string>
+    <string name="nbj">Nombre de jours :</string>
+    <string name="bt">Budget transport :</string>
+    <string name="bn">Budget par nuit :</string>
+    <string name="br">Budget par repas :</string>
+    <string name="bv">Budget visite/sortie par jour :</string>
+    <string name="ec">Estimation du coût :</string>
+    <string name="btnCalculer">Calculer</string>
+    <string name="btnAnnuler">Annuler</string>
+    <string name="repas2">inclure 2ème repas dernier jour</string>
 </resources>

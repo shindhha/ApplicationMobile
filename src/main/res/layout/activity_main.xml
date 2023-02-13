@@ -9,75 +9,54 @@
     android:orientation="vertical"
     android:stretchColumns="1,2"
     app:flow_horizontalGap="100px">
-    <TableRow>
 
+
+    <!-- Titre -->
+    <TextView
+        android:text="@string/title"
+        android:textColor="@android:color/holo_blue_bright"
+        ></TextView>
+    <!-- Image avion -->
+    <!-- Radio button nbjours -->
+    <!-- Budget transport -->
+    <!-- Budget par nuit -->
+    <TableRow>
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="15sp"
-            android:text="@string/prix" />
-        <EditText
-            android:id="@+id/prix"
-            android:text="@string/ePrix"
-            android:layout_span="2"
-            ></EditText>
-
+            android:text="@string/bn"></TextView>
+        <EditText></EditText>
     </TableRow>
-
-
-
+    <!-- Budget par repas -->
     <TableRow>
-
-    <TextView
-
-        android:layout_width="match_parent"
-        android:layout_height="150px"
-        android:text="@string/reducton"
-        />
-        <EditText
-            android:id="@+id/reduction"
-            android:text="@string/eReduction"
-            android:layout_span="2"
-            ></EditText>
+        <TextView
+            android:text="@string/br"></TextView>
+        <EditText></EditText>
     </TableRow>
-
-
+    <!-- Check box 2ème repas -->
     <TableRow>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="150px"
-        android:text="@string/economie"
-        />
-        <EditText
-            android:id="@+id/ecnomie"
-            android:text="@string/resultat"
-            android:layout_span="2"
-            ></EditText>
+        <CheckBox></CheckBox>
+        <TextView
+            android:text="@string/repas2"></TextView>
     </TableRow>
-
-
-
+    <!-- Budget visite -->
     <TableRow>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="150px"
-        android:text="@string/payer"
-        />
-        <EditText
-            android:id="@+id/aPayer"
-            android:layout_span="2"></EditText>
+        <TextView
+            android:text="@string/bv"></TextView>
+        <EditText></EditText>
     </TableRow>
-
-
+    <!-- Estimation du coût -->
     <TableRow>
-        <Button android:text="@string/btncalcul"
+        <TextView
+            android:text="@string/ec"></TextView>
+        <EditText></EditText>
+    </TableRow>
+    <!-- Button -->
+    <TableRow>
+        <Button
             android:layout_column="1"
-            android:onClick="calcul"/>
-        <Button android:text="@string/btnannuler"
-            android:onClick="clear"/>
+            android:text="@string/btnCalculer"></Button>
+        <Button
+            android:layout_column="1"
+            android:text="@string/btnAnnuler"></Button>
     </TableRow>
-
-
-
 
   </TableLayout>
