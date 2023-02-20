@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -13,100 +13,44 @@
 
     <!-- Titre -->
     <TextView
-        android:textAlignment="center"
-        android:text="@string/title"
-        android:textColor="@android:color/holo_blue_bright"
-        ></TextView>
-    <!-- Image avion -->
-    <ImageView
-        android:src="@drawable/avion"
-        android:layout_height="300px"></ImageView>
-    <!-- Radio button nbjours -->
-    <TextView
-        android:text="@string/nbj"></TextView>
-    <RadioGroup
-        android:id="@+id/RadioGroup"
-        android:orientation="horizontal"
-        android:gravity="center">
-        <RadioButton
-            android:text="2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"></RadioButton>
-        <RadioButton
-            android:text="3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"></RadioButton>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/couleurTitre"
+        android:textStyle="bold"
+        android:textSize="@dimen/taille_titre"
+        android:text="@string/texte_titre" />
 
-        <RadioButton
-            android:text="4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"></RadioButton>
+    <!-- 4 boutons permettant de choisir la liste à afficher  :
+            - tous les modules
+            - seulement ceux du tronc commun
+            - seulement ceux du parcours A
+            - seulement ceux du parcours D -->
+    <Button
+        style="@style/StyleBouton"
+        android:onClick="clicTous"
+        android:text="@string/libelle_tous"
+        />
 
-        <RadioButton
-            android:text="5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"></RadioButton>
-    </RadioGroup>
-    <!-- Budget transport -->
-    <TableRow>
-        <TextView
+    <Button
+        style="@style/StyleBouton"
+        android:onClick="clicTroncCommun"
+        android:text="@string/libelle_commun"
+        />
 
-            android:text="@string/bt"></TextView>
-        <EditText
-            android:id="@+id/bdTransport"
-            android:layout_column="2"></EditText>
-    </TableRow>
-    <!-- Budget par nuit -->
-    <TableRow>
-        <TextView
-            android:text="@string/bn"></TextView>
-        <EditText
-            android:id="@+id/bdNuit"
-            android:layout_column="2"></EditText>
-    </TableRow>
-    <!-- Budget par repas -->
-    <TableRow>
-        <TextView
-            android:text="@string/br"></TextView>
-        <EditText
-            android:id="@+id/bdRepas"
-            android:layout_column="2"></EditText>
-    </TableRow>
-    <!-- Check box 2ème repas -->
+    <Button
+        style="@style/StyleBouton"
+        android:onClick="clicAxeA"
+        android:text="@string/libelle_axeA"  />
 
-    <TableRow>
-        <CheckBox
-            android:id="@+id/repas2"
-            android:layout_span="3"
-            android:layout_gravity="center"
-            android:text="@string/repas2"></CheckBox>
-    </TableRow>
+    <Button
+        style="@style/StyleBouton"
+        android:onClick="clicAxeB"
+        android:text="@string/libelle_axeB"   />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <!-- liste des ressources sélectionnées -->
 
-    <!-- Budget visite -->
-    <TableRow>
-        <TextView
-            android:layout_span="2"
-            android:text="@string/bv"></TextView>
-        <EditText
-            android:id="@+id/bdVisite"
-            android:layout_column="2"></EditText>
-    </TableRow>
-    <!-- Estimation du coût -->
-    <TableRow>
-        <TextView
-            android:text="@string/ec"></TextView>
-        <EditText
-            android:id="@+id/ec"
-            android:layout_column="2"></EditText>
-    </TableRow>
-    <!-- Button -->
-    <TableRow>
-        <TextView></TextView>
-        <Button
-            android:onClick="calcul"
-            android:text="@string/btnCalculer"></Button>
-        <Button
-            android:text="@string/btnAnnuler"></Button>
-    </TableRow>
-
-  </TableLayout>
+  </LinearLayout>
