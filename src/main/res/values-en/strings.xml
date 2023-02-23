@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="parcours_B">
+        <item name="R4_D_08">Advanced NetWork</item>
+        <item name="R4_D_09">Mathematics touls for management</item>
+        <item name="R4_D_10">Advanced information system management</item>
+    </string-array>
+
+</resources>
