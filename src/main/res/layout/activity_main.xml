@@ -1,60 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical"
-    android:stretchColumns="1"
-    app:flow_horizontalGap="100px">
+    android:orientation="vertical">
 
+    <!-- affiche le titre -->
+    <TextView
+        android:layout_marginTop="15dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/jour_semaine" />
 
-    <!-- Titre -->
+    <!-- affiche une barre horizontale de séparation -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:layout_marginTop="15dip"
+        android:background="#0000FF" />
+
+    <!-- affiche le sous-titre -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:textColor="@color/couleurTitre"
-        android:textStyle="bold"
-        android:textSize="@dimen/taille_titre"
-        android:text="@string/texte_titre" />
+        android:layout_marginTop="15dip"
+        android:text="@string/choix_date" />
 
-    <!-- 4 boutons permettant de choisir la liste à afficher  :
-            - tous les modules
-            - seulement ceux du tronc commun
-            - seulement ceux du parcours A
-            - seulement ceux du parcours D -->
-    <Button
-        style="@style/StyleBouton"
-        android:onClick="clicTous"
-        android:text="@string/libelle_tous"
+    <!-- sélecteur pour la date -->
+    <DatePicker
+        android:id="@+id/selecteurDate"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
         />
+    <!-- bouton pour lancer la recherche -->
+
 
     <Button
-        style="@style/StyleBouton"
-        android:onClick="clicTroncCommun"
-        android:text="@string/libelle_commun"
-        />
-
-    <Button
-        style="@style/StyleBouton"
-        android:onClick="clicAxeA"
-        android:text="@string/libelle_axeA"  />
-
-    <Button
-        style="@style/StyleBouton"
-        android:onClick="clicAxeB"
-        android:text="@string/libelle_axeB"   />
-    <ListView
-        android:id="@+id/liste"
+        android:id="@+id/btnRechercher"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bouton_rechercher"
+        android:onClick="clicRechercher" />
 
-        >
+    <!-- affiche une barre horizontale de séparation -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:layout_marginTop="15dip"
+        android:background="#0000FF" />
 
-    </ListView>
-    <!-- liste des ressources sélectionnées -->
+    <!-- champ pour afficher la phrase de résultat -->
+    <TextView
+        android:id="@+id/texteResultat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:gravity="center" />
 
-  </LinearLayout>
+</LinearLayout>

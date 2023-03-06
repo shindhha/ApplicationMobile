@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="parcours_B">
-        <item name="R4_D_08">Advanced NetWork</item>
-        <item name="R4_D_09">Mathematics touls for management</item>
-        <item name="R4_D_10">Advanced information system management</item>
-    </string-array>
+    <string name="app_name">Jour Semaine</string>
+    <string name="jour_semaine">Quel jour de la semaine ?</string>
+    <string name="choix_date">Choix de la date : </string>
+    <string name="bouton_rechercher">Rechercher</string>
+    <string name="phrase_reponse">"Cette date correspond à un "</string>
 
 </resources>
