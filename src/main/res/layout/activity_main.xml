@@ -7,60 +7,8 @@
     android:orientation="vertical">
 
     <!-- affiche le titre -->
-    <TextView
-        android:layout_marginTop="15dip"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/jour_semaine" />
-
-    <!-- affiche une barre horizontale de séparation -->
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2dip"
-        android:layout_marginTop="15dip"
-        android:background="#0000FF" />
-
-    <!-- affiche le sous-titre -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_marginTop="15dip"
-        android:text="@string/choix_date" />
-
-    <!-- sélecteur pour la date -->
-    <DatePicker
-        android:id="@+id/selecteurDate"
-        android:calendarViewShown="false"
-        android:datePickerMode="spinner"
+    <androidx.viewpager2.widget.ViewPager2
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        />
-    <!-- bouton pour lancer la recherche -->
-
-
-    <Button
-        android:id="@+id/btnRechercher"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/bouton_rechercher"
-        android:onClick="clicRechercher" />
-
-    <!-- affiche une barre horizontale de séparation -->
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2dip"
-        android:layout_marginTop="15dip"
-        android:background="#0000FF" />
-
-    <!-- champ pour afficher la phrase de résultat -->
-    <TextView
-        android:id="@+id/texteResultat"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dip"
-        android:gravity="center" />
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>
